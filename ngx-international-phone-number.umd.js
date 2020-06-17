@@ -2107,6 +2107,7 @@ var PhoneNumberComponent = /** @class */ (function () {
         if (this.defaultCountry) {
             this.updatePhoneInput(this.defaultCountry);
         }
+	if (this.phoneNumber != this.value) setTimeout(this.updateValue.bind(this), 100);
     };
     /**
      * Validation
