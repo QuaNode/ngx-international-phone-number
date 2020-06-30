@@ -1958,6 +1958,7 @@ var PhoneNumberComponent = /** @class */ (function () {
         event.preventDefault();
         this.updatePhoneInput(countryCode);
         this.onCountryCodeChanged.emit(countryCode);
+        this.defaultCountry = countryCode;
         this.updateValue();
         // focus on phone number input field
         setTimeout(function () { return _this.phoneNumberInput.nativeElement.focus(); });
